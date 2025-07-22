@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>King Kev - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          King Kev
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="Email icon"/>
+            kevin.botha@ignitetech.com
+          </div>
+          <div style="clear:both;"></div>
+          <div class="contact_info">
+            <img src="html_finalprojimages/phone.png" alt="Phone icon"/>
+            +27766060127
+          </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Projects</a>
+          <a class="topmenu" href="#recommendations">Recommendations</a>
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="https://media.giphy.com/media/L1R1tvI9svkIWwpVYr/giphy.gif" class="profile_image" alt="Animated professional avatar"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm King Kev! <img src="html_finalprojimages/waving-hand.png" width="60px" alt="Waving hand"/>
+          </h1>
+          <p>
+            I am an AI Innovation Specialist with over 2 years of experience driving digital transformation through cutting-edge artificial intelligence solutions. 
+            My expertise spans sales strategy, account management, and business development, helping organizations unlock the potential of AI technologies. 
+            I excel at building strategic partnerships, identifying growth opportunities, and delivering innovative solutions that drive measurable business impact across diverse industries.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png" alt="HTML5 logo"/>
+          <h6>HTML</h6>
+          <p>2 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg" alt="JavaScript logo"/>
+          <h6>JavaScript</h6>
+          <p>3 years experience</p>
+        </div>
+
+        <div class="skill">
+          <img src="html_finalprojimages/CSS3.png" alt="CSS3 logo"/>
+          <h6>CSS3</h6>
+          <p>2 years experience</p>
+        </div>
+
+        <div class="skill">
+          <img src="html_finalprojimages/react.png" alt="React logo"/>
+          <h6>React</h6>
+          <p>1.5 years experience</p>
+        </div>
+
+        <div class="skill">
+          <img src="html_finalprojimages/node.png" alt="Node.js logo"/>
+          <h6>Node.js</h6>
+          <p>2 years experience</p>
+        </div>
+
+        <div class="skill">
+          <img src="html_finalprojimages/python.png" alt="Python logo"/>
+          <h6>Python</h6>
+          <p>1 year experience</p>
+        </div>
+
+        <div class="skill">
+          <img src="html_finalprojimages/java.png" alt="Java logo"/>
+          <h6>Java</h6>
+          <p>2 years experience</p>
+        </div>
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>E-Commerce Dashboard</h3>
+            <ul>
+              <li>Built a comprehensive admin dashboard for an online store using React and Node.js, featuring real-time sales analytics, inventory management, and customer data visualization with Chart.js integration</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>AI Specialists Platform</h3>
+            <ul>
+              <li>Developed a collaborative AI specialists platform with user authentication, expert matching algorithms, and real-time project collaboration tools using React, Express.js, and machine learning APIs for enhanced user experience</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Weather Forecast Platform</h3>
+            <ul>
+              <li>Created a responsive weather application that provides 7-day forecasts, location-based weather alerts, and interactive maps using HTML5 Geolocation API, OpenWeatherMap API, and modern CSS Grid layout</li>
+            </ul>
+          </div>
+        </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Outstanding developer with exceptional problem-solving skills. Delivered our e-commerce project ahead of schedule with clean, efficient code. Highly recommend for any complex web development needs.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Fantastic collaboration experience! Great communication, innovative solutions, and attention to detail. The weather app exceeded our expectations. Would definitely work together again on future projects.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Talented full-stack developer who transforms ideas into reality. Professional, reliable, and technically skilled. The task management system improved our team productivity significantly. Excellent work quality.
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)" id="recommender_name"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">  <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+      </a>
+    </div>
+
+    <div class="popup" id="popup">
+      <img src="html_finalprojimages/checkmark--outline.svg" alt="Checkmark"/>
+      <h3>Thank you for your recommendation!</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+
+    <script>
+      function addRecommendation() {
+        // Get the message of the new recommendation
+        var recommendation = document.getElementById("new_recommendation");
+        
+        // If the user has left a recommendation, display a popup
+        if (recommendation.value != null && recommendation.value.trim() != "") {
+          console.log("New recommendation added");
+          
+          // Create a new 'recommendation' element and set it's value to the user's message
+          var element = document.createElement("div");
+          element.setAttribute("class","recommendation");
+          element.innerHTML = '<span>&#8220;</span>' + recommendation.value + '<span>&#8221;</span>';
+          
+          // Add this element to the end of the list of recommendations
+          document.getElementById("all_recommendations").appendChild(element); 
+          
+          // Reset the value of the textarea
+          recommendation.value = "";
+          
+          // Display the popup
+          showPopup(true);
+        }
+      }
+
+      function showPopup(bool) {
+        if (bool) {
+          document.getElementById('popup').style.visibility = 'visible';
+        } else {
+          document.getElementById('popup').style.visibility = 'hidden';
+        }
+      }
+    </script>
+
+    <style>
+      /* Basic CSS for demonstration - you can replace with your style.css */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+      }
+
+      nav {
+        background: #333;
+        color: white;
+        padding: 1rem;
+      }
+
+      .profile_name {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+      }
+
+      .contact_info {
+        margin: 0.5rem 0;
+      }
+
+      .contact_info img {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+        vertical-align: middle;
+      }
+
+      .topmenu {
+        color: white;
+        text-decoration: none;
+        margin-right: 20px;
+        padding: 10px 15px;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+      }
+
+      .topmenu:hover {
+        background-color: #555;
+        color: white;
+        font-weight: bolder;
+        text-decoration: underline;
+      }
+
+      .container {
+        display: flex;
+        align-items: center;
+        padding: 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .profile_image {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        margin-right: 2rem;
+      }
+
+      section {
+        padding: 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      h2 {
+        text-align: center;
+        margin-bottom: 2rem;
+        color: #333;
+      }
+
+      .all_skills {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+      }
+
+      .skill {
+        text-align: center;
+        background: #f4f4f4;
+        padding: 1rem;
+        border-radius: 10px;
+        width: 150px;
+      }
+
+      .skill img {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 1rem;
+      }
+
+      .projects-container {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .project-card {
+        background: #f9f9f9;
+        padding: 1.5rem;
+        margin-bottom: 1rem;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      }
+
+      .all_recommendations {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .recommendation {
+        background: #f0f8ff;
+        padding: 1rem;
+        border-radius: 10px;
+        font-style: italic;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      }
+
+      .flex_center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      fieldset {
+        border: 2px solid #333;
+        border-radius: 10px;
+        padding: 2rem;
+        max-width: 500px;
+      }
+
+      legend {
+        font-weight: bold;
+        font-size: 1.2rem;
+      }
+
+      input, textarea {
+        width: 100%;
+        padding: 0.5rem;
+        margin: 0.5rem 0;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+      }
+
+      button {
+        background: #333;
+        color: white;
+        padding: 0.7rem 1.5rem;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1rem;
+      }
+
+      button:hover {
+        background: #555;
+      }
+
+      .iconbutton {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background: #333;
+        padding: 10px;
+        border-radius: 50%;
+      }
+
+      .popup {
+        visibility: hidden;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: white;
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0,0,0,0.5);
+        text-align: center;
+        z-index: 1000;
+      }
+
+      .popup img {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 1rem;
+      }
+    </style>
+  </body>
+</html>
